@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: "Avenir",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    line-height: 1.4;
+    color: whitesmoke;
+    background: rgb(40, 40, 40);
+    margin: 0;
+}
+
+
+main {
+    margin: 20px;
+}
+
+h1 {
+    line-height: 1.4;
+    color: whitesmoke;
+    font-size: 30px;
+    clear: both;
+}
+
+h2 {
+    color: gold;
+    font-size: 25px;
+    clear: both;
+    padding-top: 30px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    margin: 10px 10px 10px 10px;
+    object-fit: cover;
+}
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #004aad;
+    font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a black background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(40, 40, 40);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a.aktuell {
+    font-weight: bold;
+}
+
+a {
+    color: #a1e1fa;
+    display: inline-block;
+    padding: 5px;
+}
+
+/* bullet points bei Linklisten ausschalten und Zeilenabstand definiert */
+.links li {
+    /*list-style: none;*/
+    line-height: 30px;
+}
+
+/*  ---------------------------------------------------
+    DEFINITION DER FUSSLEISTE
+    ---------------------------------------------------
+*/
+.footer {
+    /*mehrspaltige Ansicht*/
+    display: flex;
+    color: #fffefe;
+    padding: 2rem 0;
+    height: auto;
+    /* Abstände zwischen den Spalten */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    clear: both;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.footer h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    clear: both;
+}
+
+.address {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+}
+
+.social li {
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: magenta;
+    color: white;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #004aad;
+}
+
+.bildrechts {
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 30%;
+}
+
+.bildlinks {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 33%;
+}
+
+
+.videolinks {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 30%;
+}
+
+.ABI {
+    color: gold;
+}
+
+.grid-container {
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.col2_row2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.col1_row2 {
+    grid-row: span 2;
+}
+
+.col2_row1 {
+    grid-column: span 2;
+}
+
+.col3_row1 {
+    grid-column: span 3;
+}
+
+.section {
+    padding: 10px;
+}
+
+.menu {
+    border: 10px solid #004aad;
+    flex: 0 0 200px;
+}
+
+.content {
+    background-color: rgb(40, 40, 40);
+    flex: 1 1 350px;
+}
+
+.row {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+strong {
+    color: gold;
+}
+
+.fancy-button {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    border: solid;
+    border-radius: 5px;
+    background-color: gold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.fancy-button:hover {
+    background-color: #3e8e41;
+}
+
+.grid-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+.grid-table>div {
+    background-color: #004aad;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* responsive design der Bilder */
+@media screen and (max-width: 600px) {
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .bildlinks .bildrechts {
+        height: auto;
+        max-width: 100%;
+    }
+
+    /*
+    .grid-container {
+        clear: both;
+        display: grid;
+        grid-template-columns: 1fr;
+    }*/
+}

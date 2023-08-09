@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: "Avenir",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    line-height: 1.4;
+    color: whitesmoke;
+    background: rgb(40, 40, 40);
+    margin: 0px;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 20px;
+}
+
+h1 {
+    margin: 20px;
+    line-height: 1.4;
+    color: whitesmoke;
+}
+
+h2 {
+    margin: 20px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+.text_ohne_margin {
+    margin: 20px 0px;
+}
+
+span {
+    margin: auto;
+    font-size: 2rem;
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #004aad;
+    font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a.aktuell {
+    font-weight: bold;
+}
+
+/* Three columns side by side */
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+    Gap: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    padding: 20px;
+    margin: 10px;
+    max-width: 350px;
+}
+
+.report {
+    max-width: 320px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+    max-width: 350px;
+}
+
+.gallery img {
+    width: 350px;
+    height: auto;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.modal-content {
+    display: block;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.modal img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .box {
+        display: block;
+    }
+
+    section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.title {
+    color: whitesmoke;
+}
+
+.subcolumn {
+    float: left;
+    margin: 10px;
+}
+
+.subrow {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/*  ---------------------------------------------------
+    DEFINITION DER FUSSLEISTE
+    ---------------------------------------------------
+*/
+.footer {
+    /*mehrspaltige Ansicht*/
+    display: flex;
+    color: #fffefe;
+    padding: 2rem 0;
+    height: auto;
+    /* Abstände zwischen den Spalten */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    clear: both;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.footer h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    clear: both;
+}
+
+.address {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+}
+
+.social li {
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: magenta;
+    color: white;
+}
